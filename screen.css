@@ -1,0 +1,97 @@
+.navbar-nav > li > a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.navbar-default a {
+	font-weight: bold;
+	color: #6DBCDB !important;
+}
+
+
+
+.navbar-nav > .active > a {
+	background: none !important;
+}
+
+@media (min-width: 768px) {
+	.navbar-brand {
+		padding-top: 39px;
+		font-size: 1.8em;
+	}
+	.navbar-nav > li > a {
+		padding-top: 30px;
+		padding-bottom: 40px;
+		font-size: 1.15em;
+		padding-left: 8px;
+		padding-right: 8px;
+		margin-top: 10px;
+	}
+	.navbar-nav > li > a:hover {
+		border-top: 10px solid #6DBCDB;
+		margin-top: 0;
+	}
+	.modal-dialog {
+		width: 700px;
+	}
+}
+
+@media (min-width: 992px) {
+	.navbar-nav > li > a {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.modal-dialog {
+		width: 900px;
+	}
+}
+
+.navbar-default {
+	background: #fff;
+	margin-bottom: 0;
+	border: none;
+}
+
+.jumbotron {
+	background: rgb(44, 62, 80);
+	color: #fff;
+	text-align: center;
+}
+
+.btn-primary {
+	background-color: rgb(252, 67, 73);
+	border-color: rgb(239, 54, 60);
+}
+
+.btn-primary:hover {
+	background-color: rgb(235, 46, 48);
+	border-color: rgb(219, 34, 40);
+}
+
+.action-buttons > a {
+	margin: 10px;
+}
+
+.error {
+	background-color: rgb(252, 67, 73);
+	color: #fff;
+}
+
+.error p {
+	line-height: 1.8em;
+	margin-bottom: 0;
+}
+
+#emailFCC .well, #emailFCC p:last-child {
+	margin-bottom: 0;
+}
+
+.has-feedback .form-control-feedback {
+	top: 30px;
+	right: 5px;
+}
+
+#contacts h3 {
+	display: inline-block;
+	margin-right: 10px;
+}
