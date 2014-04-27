@@ -1,0 +1,94 @@
+/*****************************************************************************/
+/************************** BEGIN NET NEUTRALITY CSS *************************/
+/*****************************************************************************/
+
+/* From: http://net-neutrality.io/reddit.html */
+
+/* Everything is a within this main h4 */
+.side .md h4:nth-of-type(1) {
+	/* Make the h4 a block element so we can resize it */
+	display: block;
+	/* Absolute position it to the top */
+	position: absolute;
+	top: 65px;
+	left: 0;
+	right: 0;
+	/* Make the background blue */
+	background: rgb(44, 62, 80);
+	/* Hide overflow */
+	overflow: hidden;
+	/* Pad the top and bottom to fill height */
+	padding: 25px 0 10px 0;
+	/* Center the text */
+	text-align: center;
+	/* Fix the line-height */
+	line-height: 50px;
+	/* Force the height */
+	height: 125px;
+	/* Hide an overflow */
+	overflow: hidden;
+}
+
+/* Limit the width of the content so it wraps */
+.side .md h4:nth-of-type(1) a {
+	/* Make the link a block element so we can limit the width */
+	display: block;
+	/* Force two lines */
+	max-width: 690px;
+	/* Make the text white */
+	color: rgb(255, 255, 255);
+	/* Set the font to be nice */
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	/* Center */
+	margin: 0 auto;
+	/* Pad to the left and right */
+	padding: 0 15px;
+}
+
+/* Select the bold from the link */
+.side .md h4:nth-of-type(1) a > strong {
+	/* Make the strong inline so the button stays with it */
+	display: inline;
+	/* Make it big */
+	font-size: 40px;
+}
+
+/* Make the italic content a button */
+.side .md h4:nth-of-type(1) a > em {
+	/* Make it a inline-block element so it remains on the same line */
+	display: inline-block;
+	/* Add some padding to the text */
+	padding: 10px 16px;
+	/* Set the size to smaller than the banner text and centered */
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	/* Lets center the text */
+	line-height: 1.33;
+	/* Make it red */
+	background-color: rgb(252, 67, 73);
+	border-color: rgb(239, 54, 60);
+	/* Set the border */
+	border-radius: 6px;
+	border-width: 1px;
+	border-style: solid;
+	/* Make the mouse a pointer on hover */
+	cursor: pointer;
+	/* Pad to the left from the text */
+	margin-left: 15px;
+	/* Fix the position */
+	position: relative;
+	top: -10px;
+	/* Remove the italic */
+	font-style: normal;
+}
+
+/* Push Down Content below banner */
+.content, .side {
+	margin-top: 170px;
+}
+
+/*****************************************************************************/
+/*************************** END NET NEUTRALITY CSS **************************/
+/*****************************************************************************/
