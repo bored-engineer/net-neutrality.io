@@ -1,24 +1,76 @@
-.navbar-nav > li > a {
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
+/* Make all top navbar links blue and bold */
 .navbar-default a {
 	font-weight: bold;
-	color: #6DBCDB !important;
+	color: rgb(109, 188, 219) !important;
 }
 
-
-
+/* Remove the default hover background */
 .navbar-nav > .active > a {
 	background: none !important;
 }
 
+/* Make the navbar white and borderless */
+.navbar-default {
+	background: #fff;
+	margin-bottom: 0;
+	border: none;
+}
+
+/* Make the jumbotron a banner */
+.jumbotron {
+	background: rgb(44, 62, 80);
+	color: #fff;
+	text-align: center;
+}
+
+/* Make the buttons red instead */
+.btn-primary {
+	background-color: rgb(252, 67, 73);
+	border-color: rgb(239, 54, 60);
+}
+.btn-primary:hover {
+	background-color: rgb(235, 46, 48);
+	border-color: rgb(219, 34, 40);
+}
+
+/* Add some padding to the action buttons */
+.action-buttons > a {
+	margin: 10px;
+}
+
+/* Make the error text (no js) red */
+.error {
+	background-color: rgb(252, 67, 73);
+	color: #fff;
+}
+
+/* Make sure it's hidden by default unless needed */
+.error p {
+	line-height: 1.8em;
+	margin-bottom: 0;
+}
+
+/* Remove extra padding bootstrap adds */
+#emailFCC .well, #emailFCC p:last-child {
+	margin-bottom: 0;
+}
+
+/* Fix the checkmark location in zip code entry */
+.has-feedback .form-control-feedback {
+	top: 30px;
+	right: 5px;
+}
+
+/* Special fixes for desktop only */
 @media (min-width: 768px) {
+
+	/* Reposition the brand text */
 	.navbar-brand {
 		padding-top: 39px;
 		font-size: 1.8em;
 	}
+
+	/* Take the links and make them padded and bigger */
 	.navbar-nav > li > a {
 		padding-top: 30px;
 		padding-bottom: 40px;
@@ -31,67 +83,27 @@
 		border-top: 10px solid #6DBCDB;
 		margin-top: 0;
 	}
+
+	/* Make the modals wider */
 	.modal-dialog {
 		width: 700px;
 	}
+
 }
 
+/* Special fixes for larger screens */
 @media (min-width: 992px) {
+
+	/* Make the nav futhur apart */
 	.navbar-nav > li > a {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+
+	/* Make the modals even bigger */
 	.modal-dialog {
 		width: 900px;
 	}
+	
 }
 
-.navbar-default {
-	background: #fff;
-	margin-bottom: 0;
-	border: none;
-}
-
-.jumbotron {
-	background: rgb(44, 62, 80);
-	color: #fff;
-	text-align: center;
-}
-
-.btn-primary {
-	background-color: rgb(252, 67, 73);
-	border-color: rgb(239, 54, 60);
-}
-
-.btn-primary:hover {
-	background-color: rgb(235, 46, 48);
-	border-color: rgb(219, 34, 40);
-}
-
-.action-buttons > a {
-	margin: 10px;
-}
-
-.error {
-	background-color: rgb(252, 67, 73);
-	color: #fff;
-}
-
-.error p {
-	line-height: 1.8em;
-	margin-bottom: 0;
-}
-
-#emailFCC .well, #emailFCC p:last-child {
-	margin-bottom: 0;
-}
-
-.has-feedback .form-control-feedback {
-	top: 30px;
-	right: 5px;
-}
-
-#contacts h3 {
-	display: inline-block;
-	margin-right: 10px;
-}
