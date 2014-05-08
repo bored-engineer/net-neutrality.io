@@ -166,4 +166,17 @@ $(function() {
 	// Call once on load
 	resize();
 
+	// Make the scrolling nice
+	$('a').click(function(){
+		// Only if they have a name attribute
+		if ($(this).attr('name')) {
+			// Scroll nicely
+			$('html, body').animate({
+				scrollTop: $($.attr(this, 'href')).offset().top
+			}, 500);
+			// Cancel browser from doing it
+			return false;
+		}
+	});
+
 });
