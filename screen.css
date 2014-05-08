@@ -51,18 +51,18 @@
 }
 
 /* Remove extra padding bootstrap adds */
-#emailFCC .well, #emailFCC p:last-child, #contacts .well  {
+#emailFCC .well, #emailFCC p:last-child, #contacts .well, .social-media-text, .help p, #findRepresentative .form-group {
 	margin-bottom: 0;
 }
 
 /* Make the contacts headers blue */
-#contacts .panel-heading {
+#contactRepresentative .panel-heading {
 	background: rgb(44, 62, 80);
 	color: #FFF;
 }
 
 /* Nice blue outline */
-#contacts .panel {
+#contactRepresentative .panel {
 	border-color: rgb(44, 62, 80);
 }
 
@@ -98,12 +98,11 @@
 }
 
 /* Make the icons bigger */
-.social-media-text {
-	margin-bottom: 0;
-}
 .social-media {
 	font-size: 3.4em;
 }
+
+/* Fix colors in accordance with brand usage */
 .social-media .fa-twitter-square {
 	color: #55acee;
 }
@@ -117,13 +116,13 @@
 	color: #32506d;
 }
 
+/* Add padding between logos */
 .social-media > a {
 	margin-right: 18px;
 }
 .social-media > a:last-child {
 	margin-right: 0;
 }
-
 
 /* Special fixes for desktop only */
 @media (min-width: 768px) {
