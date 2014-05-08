@@ -51,8 +51,28 @@
 }
 
 /* Remove extra padding bootstrap adds */
-#emailFCC .well, #emailFCC p:last-child {
+#emailFCC .well, #emailFCC p:last-child, #contacts .well  {
 	margin-bottom: 0;
+}
+
+/* Make the contacts headers blue */
+#contacts .panel-heading {
+	background: rgb(44, 62, 80);
+	color: #FFF;
+}
+
+/* Nice blue outline */
+#contacts .panel {
+	border-color: rgb(44, 62, 80);
+}
+
+/* More spacing fixes */
+#contactRepresentative h2:first-child {
+	margin-top: 0;
+}
+
+#contactRepresentative .btn-group-vertical {
+	width: 100%;
 }
 
 /* Fix the checkmark location in zip code entry */

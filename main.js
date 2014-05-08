@@ -40,7 +40,7 @@ $(function() {
 		// Loop each rep
 		$.each(data.results.reverse(), function(i, rep) {
 			// Create the html
-			var info = $('<div class="panel panel-default"><div class="panel-heading"></div><div class="panel-body"><p class="lead">Contact <span /> via phone at <a target="_blank" />, via <span></span> website <a target="_blank">here</a> and/or in writing at <span></span> Washington, DC office:</p><div class="well" /></div></div>');
+			var info = $('<div class="panel panel-default"><div class="panel-heading"></div><div class="panel-body"><p class="lead">Contact <span /> via phone at <a target="_blank" />, via <span></span> website <a target="_blank">here</a> and/or in writing at <span></span> Washington, DC office address:</p><div class="well" /></div></div>');
 			// Insert data
 			info.find('.panel-heading').text((rep.chamber === "house" ? 'Representative' : 'Senator') + ' ' + rep.first_name + " " + rep.last_name);
 			info.find('p').find('span:eq(0)').text((rep.chamber === "house" ? 'Representative' : 'Senator') + " " + rep.last_name);
@@ -150,5 +150,20 @@ $(function() {
 			$('#findReps').click();
 		}
 	});
+
+	// Adjust the buttons in contact rep
+	function resize() {
+		if ($(window).width() > 500) {
+			$("#scripts").removeClass('btn-group-vertical').addClass('btn-group').addClass('btn-group-justified');
+		} else {
+			$("#scripts").addClass('btn-group-vertical').removeClass('btn-group').removeClass('btn-group-justified');
+		}
+	}
+
+	// Call when window changes
+	$(window).resize(resize);
+
+	// Call once on load
+	resize();
 
 });
