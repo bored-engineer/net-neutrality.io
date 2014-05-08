@@ -81,8 +81,65 @@
 	right: 5px;
 }
 
+/* Maintains aspect ratio of video */
+.aspect-ratio {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 60.9375%;
+}
+
+/* Fills the page */
+.aspect-ratio iframe {
+	position: absolute;
+	left: 0; top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Make the icons bigger */
+.social-media-text {
+	margin-bottom: 0;
+}
+.social-media {
+	font-size: 3.4em;
+}
+.social-media .fa-twitter-square {
+	color: #55acee;
+}
+.social-media .fa-facebook-square {
+	color: #3b5998;
+}
+.social-media .fa-google-plus-square {
+	color: #dd4b39;
+}
+.social-media .fa-tumblr-square {
+	color: #32506d;
+}
+
+.social-media > a {
+	margin-right: 18px;
+}
+.social-media > a:last-child {
+	margin-right: 0;
+}
+
+
 /* Special fixes for desktop only */
 @media (min-width: 768px) {
+
+	/* Reset aspect ratio to fixed */
+	.aspect-ratio {
+		height: auto;
+		padding-bottom: 0;
+	}
+
+	/* Fixed size video */
+	.aspect-ratio iframe {
+		position: relative;
+		width: 640px;
+		height: 390px; 
+	}
 
 	/* Reposition the brand text */
 	.navbar-brand {
