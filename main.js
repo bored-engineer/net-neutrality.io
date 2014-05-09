@@ -168,8 +168,8 @@ $(function() {
 
 	// Make the scrolling nice
 	$('a').click(function(){
-		// Only if they have a name attribute
-		if ($(this).attr('name')) {
+		// If it's an anchor link
+		if ($(this).attr('href').indexOf('#') === 0) {
 			// Scroll nicely
 			$('html, body').animate({
 				scrollTop: $($.attr(this, 'href')).offset().top
